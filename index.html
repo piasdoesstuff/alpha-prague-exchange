@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alpha Prague | Private Currency Exchange</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0a3d19",
+                        "background-light": "#ffffff",
+                        "background-dark": "#122016",
+                        "border-gray": "#e5e5e5",
+                        "text-main": "#111111",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "mono": ["JetBrains Mono", "monospace"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .ascii-art {
+            line-height: 1.1;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        pre {
+            margin: 0;
+        }
+        .thin-border-b { border-bottom: 1px solid #e5e5e5; }
+        .thin-border-r { border-right: 1px solid #e5e5e5; }
+        .thin-border-l { border-left: 1px solid #e5e5e5; }
+        .thin-border-t { border-top: 1px solid #e5e5e5; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main dark:text-slate-100 min-h-screen">
+<!-- Top Navigation -->
+<header class="w-full thin-border-b px-8 py-6 flex justify-between items-baseline sticky top-0 bg-white/90 backdrop-blur-sm z-50">
+<div class="flex items-center gap-2">
+<h1 class="text-xl font-bold tracking-tighter uppercase font-display">Alpha Prague</h1>
+<span class="w-2 h-2 bg-primary rounded-full animate-pulse ml-2"></span>
+</div>
+<nav class="hidden md:flex gap-10 font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500">
+<a class="hover:text-primary transition-colors" href="#">Exchange</a>
+<a class="hover:text-primary transition-colors" href="#">Rates</a>
+<a class="hover:text-primary transition-colors" href="#">Office</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+<a class="hover:text-primary transition-colors" href="#">Menu</a>
+</nav>
+<div class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto px-8">
+<!-- Hero Section -->
+<section class="py-20 flex flex-col items-center">
+<div class="max-w-[650px] text-center">
+<p class="text-[22px] leading-[1.4] font-normal tracking-tight mb-12">
+                    Alpha Prague is a private currency exchange office operating in the center of Prague, providing premium financial services with absolute transparency and discretion.
+                </p>
+<!-- Financial Seal ASCII -->
+<div class="ascii-art text-[10px] text-slate-400 select-none mb-12">
+<pre>┌───────────────────────────────────────────────────────────┐
+│                                                           │
+│    █████╗ ██╗     ██████╗ ██╗  ██╗ █████╗     ██████╗     │
+│   ██╔══██╗██║     ██╔══██╗██║  ██║██╔══██╗    ██╔══██╗    │
+│   ███████║██║     ██████╔╝███████║███████║    ██████╔╝    │
+│   ██╔══██║██║     ██╔═══╝ ██╔══██║██╔══██║    ██╔═══╝     │
+│   ██║  ██║███████╗██║     ██║  ██║██║  ██║    ██║         │
+│   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝         │
+│                                                           │
+│                 INSTITUTIONAL GRADE SEAL                  │
+│                    ESTABLISHED IN PRAGUE                  │
+└───────────────────────────────────────────────────────────┘
+</pre>
+</div>
+</div>
+</section>
+<!-- Exchange Rates -->
+<section class="thin-border-t thin-border-b py-12">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-8">
+<h2 class="font-mono text-[10px] uppercase tracking-widest text-slate-500">Live Exchange Rates</h2>
+<div class="flex items-center gap-2 font-mono text-[10px] text-slate-400 uppercase">
+<span class="material-symbols-outlined text-[12px]">schedule</span>
+                    Updated 09:41 Prague Time
+                </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 font-mono">
+<div class="flex justify-between items-center py-4 thin-border-b">
+<span class="text-sm font-medium">EUR / CZK</span>
+<div class="flex gap-12">
+<div class="flex flex-col items-end">
+<span class="text-[9px] uppercase text-slate-400 mb-1">Buy</span>
+<span class="text-lg">24.520</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[9px] uppercase text-slate-400 mb-1">Sell</span>
+<span class="text-lg">25.150</span>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-center py-4 thin-border-b">
+<span class="text-sm font-medium">USD / CZK</span>
+<div class="flex gap-12">
+<div class="flex flex-col items-end">
+<span class="text-[9px] uppercase text-slate-400 mb-1">Buy</span>
+<span class="text-lg">22.840</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[9px] uppercase text-slate-400 mb-1">Sell</span>
+<span class="text-lg">23.410</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Centerpiece (Vault ASCII) -->
+<section class="py-24 flex justify-center overflow-hidden">
+<div class="ascii-art text-[8px] md:text-[10px] leading-tight text-primary/40">
+<pre>                ____________________________________________________
+               /                                                    \
+              |    ______________________________________________    |
+              |   |                                              |   |
+              |   |    ______________________________________    |   |
+              |   |   |                                      |   |   |
+              |   |   |    01010101   ALPHA   01010101       |   |   |
+              |   |   |    10101010   PRAGUE  10101010       |   |   |
+              |   |   |    ______________________________    |   |   |
+              |   |   |   |                              |   |   |   |
+              |   |   |   |       [ VAULT SECURE ]       |   |   |   |
+              |   |   |   |______________________________|   |   |   |
+              |   |   |______________________________________|   |   |
+              |   |______________________________________________|   |
+              |______________________________________________________|
+</pre>
+</div>
+</section>
+<!-- Services & Information -->
+<section class="grid grid-cols-1 md:grid-cols-3 thin-border-t">
+<div class="p-8 md:thin-border-r">
+<h3 class="font-mono text-[10px] uppercase tracking-widest text-slate-500 mb-6">Direct Exchange</h3>
+<p class="text-sm leading-relaxed text-slate-600">
+                    We eliminate intermediate banking fees by maintaining physical reserves. All transactions are settled instantly in cash or via immediate bank transfer for institutional clients.
+                </p>
+</div>
+<div class="p-8 md:thin-border-r">
+<h3 class="font-mono text-[10px] uppercase tracking-widest text-slate-500 mb-6">Transparent Rates</h3>
+<p class="text-sm leading-relaxed text-slate-600">
+                    What you see is what you get. No hidden commissions, no variable fees. Our rates are pegged to the interbank mid-market rate with a minimal operational spread.
+                </p>
+</div>
+<div class="p-8">
+<h3 class="font-mono text-[10px] uppercase tracking-widest text-slate-500 mb-6">Location</h3>
+<address class="not-italic text-sm leading-relaxed text-slate-600">
+                    Na Příkopě 12<br/>
+                    110 00 Praha 1<br/>
+                    Czech Republic<br/>
+<span class="block mt-4 font-mono text-[10px] text-primary">T: +420 224 123 456</span>
+</address>
+</div>
+</section>
+<!-- Map Placeholder (Minimalist) -->
+<section class="mb-20">
+<div class="w-full h-64 bg-slate-50 flex items-center justify-center thin-border-t thin-border-b grayscale opacity-50 relative overflow-hidden">
+<img alt="Map of Prague center" class="w-full h-full object-cover" data-alt="Minimalist grayscale map of Prague city center" data-location="Prague" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv2RtPXFFFVZMk2WkABKovcIlTpL9vIpVjHziCgSpQMQn4JDZ0ndj1xDvUb9cGv36LA2COK5QuMv7nm22j3REZkbt05g23ThWxod6iPd9t4dUI169HBstF4OaM_4-m6QXyPwbmt6duM-DL3Tinbd9em4O4j_Isa4TTzb9YkrN_1wtv98Pwtsd9bEYL_-iyhsGpnHrtKzXz5y0IdFo_nmWOUD7OuIwtjWrEKUySMdihylp3oNXdU0eOexs5i3L9hF7xIkb2DEJCaWU"/>
+<div class="absolute inset-0 bg-white/60 pointer-events-none"></div>
+<div class="absolute flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+<span class="font-mono text-[10px] mt-2 bg-white px-2 py-1 thin-border-t thin-border-b thin-border-l thin-border-r">ALPHA OFFICE</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full thin-border-t px-8 py-12 mt-20">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+<div class="flex flex-col gap-1">
+<span class="font-bold tracking-tighter uppercase font-display">Alpha Prague</span>
+<span class="font-mono text-[10px] text-slate-400 uppercase">Private Currency Exchange Office</span>
+</div>
+<div class="flex flex-wrap gap-10 font-mono text-[10px] uppercase tracking-widest text-slate-400">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span>Text mode: on</span>
+</div>
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">AML Policy</a>
+<span>© 2024</span>
+</div>
+</div>
+</footer>
+</body></html>
