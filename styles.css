@@ -1,0 +1,29 @@
+body {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ascii-art {
+  line-height: 1.1;
+  font-family: "JetBrains Mono", monospace;
+}
+
+pre {
+  margin: 0;
+}
+
+.thin-border-b {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.thin-border-r {
+  border-right: 1px solid #e5e5e5;
+}
+
+.thin-border-l {
+  border-left: 1px solid #e5e5e5;
+}
+
+.thin-border-t {
+  border-top: 1px solid #e5e5e5;
+}
